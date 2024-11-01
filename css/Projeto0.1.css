@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: rgba(236, 144, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.container {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaço embaixo do título */
+  }
+
+  .container {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona espaço embaixo do título */
+  }
+
+  /* Mexe na logo do navgation */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 10px; /* Ajuste o espaçamento entre a logo e o título */
+}
+
+.logo-container h1 {
+    font-size: 2em;
+    color: #000000;
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Navgation */
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* Cria um efeito de linha que aparece abaixo do link quando o mouse passa sobre ele. */
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .carrinho {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .carrinho:hover {
+    background-color: rgb(255, 255, 255);
+    color: #ffae00;
+}
+
+/* Estilização dos cards */
+.card div {
+    background-color: #fff;
+    width: 220px;
+    height: 262px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transform: translateY(-100px);
+}
+
+.card h1 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+    text-align: center;
+}
+
+.card button {
+    background-color: #2192ff;
+    height: 29px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+/* Botão com efeito hover */
+.card button:hover {
+    background-color: #ffae00; /* Cor mais escura ao passar o mouse */
+    transition: all 0.5s ease-in-out;
+  }
+
+img {
+    border-radius: 12px;
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0  10px rgba(0, 0, 0, 0.418);
+    opacity: 4;
+    transform: translateY(-120px);
+    animation: fadeInUp 0.5s forwards;
+}
