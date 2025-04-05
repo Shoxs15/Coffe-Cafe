@@ -157,6 +157,6 @@ img {
     border-radius: 10px;
     box-shadow: 0  10px rgba(0, 0, 0, 0.418);
     opacity: 4;
-    transform: translateY(-120px);
+    transform: translateY(-90px);
     animation: fadeInUp 0.5s forwards;
 }
